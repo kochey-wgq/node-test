@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $.ajax({
+            type:"get",
+            url:"http://localhost:1111/index",
+            data:{
+                name:"KoChey",
+                age:"19"
+            },
+            success:(msg)=>{
+               console.log(msg)
+            }
+        }) 
+    </script>
+    <!-- <form action="http://localhost:2222/index/main" method="post">
+        <input type="text" name="user1">
+        <input type="text" name="user2">
+        <input type="text" name="user3">
+        <input type="submit" value="提交">
+    </form> -->
+</body>
+</html>
